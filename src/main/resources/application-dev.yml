@@ -1,0 +1,10 @@
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    name: dataSource
+    url: jdbc:ArteryBase://172.16.34.123:5432/abase?currentSchema=db_mf
+    username: sa
+    password: tusc@6789#JKL
+    #type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.thunisoft.ArteryBase.Driver

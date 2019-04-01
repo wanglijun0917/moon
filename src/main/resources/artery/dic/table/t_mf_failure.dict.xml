@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>c5c829427bb2de04decd50b079394d40</cid>
+  <key>key8703</key>
+  <tableName>t_mf_failure</tableName>
+  <showName>消息抓取系统-失败记录</showName>
+  <desc />
+  <submitName>mfFailure</submitName>
+  <fields>
+    <field id="2e860242c03bd48df2b8b3db515c2b7c" fieldName="c_bh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="编号" submitName="bh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="5755e1c62b883f5b5eb5693696ad8140" fieldName="c_quebh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="查询编号" submitName="quebh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="6b73c43f7e7f6a677d4feef731b65d95" fieldName="c_msgbh" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="消息编号" submitName="msgbh" comment="1.0.0.0" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="cc46bd2d44c656c11ecf59d69e1a858d" fieldName="c_message" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="消息" submitName="message" comment="1.0.0.0" required="false" maxLength="600" editor="input" />
+    </field>
+  </fields>
+</table>
+

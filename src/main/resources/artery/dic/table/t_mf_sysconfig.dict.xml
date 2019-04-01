@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>08fa03488a2f4a79f4e02e1c448dddf4</cid>
+  <key>key518</key>
+  <tableName>t_mf_sysconfig</tableName>
+  <showName>消息抓取系统-系统配置</showName>
+  <desc />
+  <submitName>mfSysconfig</submitName>
+  <fields>
+    <field id="c8c10e9cff3506707ab5966d0e11fb3f" fieldName="c_bh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="编号" submitName="bh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="56e9dd05c84037ed15a56d586bd7fb54" fieldName="c_dbbh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="数据库配置编号" submitName="dbbh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="97f1173939c878d5f7e6525944be0789" fieldName="c_sysname" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="系统名称" submitName="sysname" comment="1.0.0.0" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="20df44a4360fb7d1a76bbca102500c7a" fieldName="c_dbuser" fieldType="organ" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="用户名" submitName="dbuser" comment="1.0.0.0" required="true" maxLength="300" editor="sTree" organType="user" />
+    </field>
+    <field id="bb5ff8569c9ec4e298f506d7ab9e6666" fieldName="c_password" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="密码" submitName="password" comment="1.0.0.0" required="true" maxLength="300" editor="password" />
+    </field>
+  </fields>
+</table>
+

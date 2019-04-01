@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>e4a2af0f1a675112c7292d3ea898f0cb</cid>
+  <key>key2755</key>
+  <tableName>t_mf_log</tableName>
+  <showName>消息抓取系统-日志记录</showName>
+  <desc />
+  <submitName>mfLog</submitName>
+  <fields>
+    <field id="bab2a3120825ebfce630fd67eb718ae0" fieldName="c_bh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="编号" submitName="bh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="1358704203a76efa3cc4096e154fba02" fieldName="c_quebh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="查询编号" submitName="quebh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="576e5ef3d9471b5c5c5dac45933781af" fieldName="c_msgbh" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="消息编号" submitName="msgbh" comment="1.0.0.0" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="31d45e60db1a93c0bb5d01e1148f3779" fieldName="c_message" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="消息" submitName="message" comment="1.0.0.0" required="false" maxLength="600" editor="input" />
+    </field>
+    <field id="5dcd43e9c3872c8622cc4b0589a3f381" fieldName="dt_updatetime" fieldType="date" dbmsType="timestamp" pk="false" defaultValue="" unique="false">
+      <extend label="更新时间" submitName="updatetime" comment="1.0.0.0" required="false" showTime="true" customFormat="YYYY-MM-DD" />
+    </field>
+    <field id="75a225470544db537f1f0d85ef862d03" fieldName="dt_successtime" fieldType="date" dbmsType="timestamp" pk="false" defaultValue="" unique="false">
+      <extend label="成功时间" submitName="successtime" comment="1.0.0.0" required="false" showTime="true" customFormat="YYYY-MM-DD" />
+    </field>
+    <field id="b1c734ab34fd9fec1b7b6854e50c7a23" fieldName="c_state" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="状态Y成功,N失败" submitName="state" comment="1.0.0.0" required="false" maxLength="300" editor="input" />
+    </field>
+  </fields>
+</table>
+

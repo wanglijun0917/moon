@@ -1,0 +1,46 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:aty="http://www.thunisoft.com">
+  <head> 
+    <meta type="aty-meta" name="javaLocation" content="com.thunisoft.moon.mf.dbconfig.controller.MfDbconfigListController.java" th:remove="all"> 
+    <meta type="aty-meta" name="cssLocation" content="css/mf/dbconfig/mfDbconfigList.css" th:remove="all"> 
+    <meta type="aty-meta" name="jsLocation" content="js/mf/dbconfig/mfDbconfigList.js" th:remove="all"> 
+    <meta type="aty-meta" name="relation-table" content="key1585.t_mf_dbconfig" th:remove="all"> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> 
+    <link rel="stylesheet" th:href="@{/webjars/artery/artery-ui.css}"> 
+    <link rel="stylesheet" aty:import> 
+    <link rel="stylesheet" th:href="@{/css/mf/dbconfig/mfDbconfigList.css}"> 
+    <title>消息抓取系统-数据库配置列表</title> 
+    <base th:href="@{/}"> 
+  </head> 
+  <body> 
+    <div id="app" style="height:100%;width:100%"> 
+      <aty-button text="增加" @click="addMfDbconfig"></aty-button> 
+      <aty-table ref="table_mfDbconfig" @load-data="loadData" :limit="10" :pageable-data="rs" exp-file-name="消息抓取系统-数据库配置列表" exp-title="消息抓取系统-数据库配置列表"> 
+        <aty-table-column aty:dict="key1585.t_mf_dbconfig.c_dbname" filter-type="string"></aty-table-column> 
+        <aty-table-column aty:dict="key1585.t_mf_dbconfig.c_dbtype" filter-type="string"></aty-table-column> 
+        <aty-table-column aty:dict="key1585.t_mf_dbconfig.c_ipaddress"></aty-table-column> 
+        <aty-table-column aty:dict="key1585.t_mf_dbconfig.c_port"></aty-table-column> 
+        <aty-table-column aty:dict="key1585.t_mf_dbconfig.c_dbuser"></aty-table-column> 
+        <aty-table-column aty:dict="key1585.t_mf_dbconfig.c_password"></aty-table-column> 
+        <aty-table-column aty:dict="key1585.t_mf_dbconfig.c_state"></aty-table-column> 
+        <aty-table-column label="操作" :width="130"> 
+          <template slot-scope="props"> 
+            <aty-link text="编辑" @click="editMfDbconfig(props.row.bh)"></aty-link> 
+            <aty-link text="删除" @click="deleteMfDbconfig(props.row.bh)"></aty-link> 
+            <aty-link text="查看" @click="mfDbconfigDetail(props.row.bh)"></aty-link> 
+          </template> 
+        </aty-table-column> 
+      </aty-table> 
+      <aty-modal ref="mfDbconfigWidiow" width="500" :footer-hide="true"> 
+        <aty-iframe height="520px" :src="popUrl" style="padding-top: 30px;" name="mfDbconfigFrame"></aty-iframe> 
+      </aty-modal> 
+      <aty-button text="测试" @click="click_test"></aty-button>
+      <aty-text ref="textref"></aty-text>
+    </div> 
+    <script type="text/javascript" th:src="@{/webjars/vue/vue.min.js}"></script> 
+    <script type="text/javascript" th:src="@{/webjars/artery/artery-ui.min.js}"></script> 
+    <script type="text/javascript" aty:import></script> 
+    <script type="text/javascript" th:src="@{/js/mf/dbconfig/mfDbconfigList.js}"></script>  
+  </body>
+</html>

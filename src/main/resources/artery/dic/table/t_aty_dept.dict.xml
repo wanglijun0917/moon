@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>ce9dedae0df0dec271a33651550ab1a1</cid>
+  <key>dbatytatydept</key>
+  <tableName>t_aty_dept</tableName>
+  <showName>部门</showName>
+  <desc />
+  <submitName>atyDept</submitName>
+  <fields>
+    <field id="7060042cbfcf3d8330577cc01f4a7c1f" fieldName="c_id" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true">
+      <extend label="标识" submitName="id" comment="VarChar" required="true" maxLength="50" editor="input" />
+    </field>
+    <field id="3defe5c65aeb44674addd57096ef9cab" fieldName="c_name" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="部门名称" submitName="name" comment="VarChar" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="a036f82f351bb93c3084fb983d231cdd" fieldName="c_pid" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="父代码" submitName="pid" comment="VarChar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="4f14767f949cd0cb53b0e639c875e3b5" fieldName="c_corp" fieldType="organ" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="所属单位" submitName="corp" comment="VarChar" required="false" maxLength="300" editor="sTree" organType="corp" />
+    </field>
+    <field id="c5f2c7bfa2c169634cab0a2595bf32ec" fieldName="c_alias" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="简称" submitName="alias" comment="VarChar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="8d4414a5999311dc990849795e15e0fa" fieldName="n_valid" fieldType="number" dbmsType="int" pk="false" defaultValue="1" unique="false">
+      <extend label="是否有效" submitName="valid" comment="Integer" required="true" valueUnit="无" maxPrecision="0" />
+    </field>
+    <field id="57a7050584b9cddfe505f47972b14f8c" fieldName="n_order" fieldType="number" dbmsType="int" pk="false" defaultValue="1" unique="false">
+      <extend label="显示顺序" submitName="order" comment="Integer" required="true" valueUnit="无" maxPrecision="0" />
+    </field>
+  </fields>
+</table>
+

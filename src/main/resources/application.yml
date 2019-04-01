@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8 #日期序列化走北京时间
+server:
+  port: 1070
+#  servlet:
+#    context-path: /moon
+
+logging: # level:  #   root: info  #file: log.log
+  path: \logs\logs_moon
+  
+  
+property1:
+  name: sdf
+  sex: 男
+  

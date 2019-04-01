@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>25c9c064cb9aec68f8240434efaafe98</cid>
+  <key>key2633</key>
+  <tableName>t_mf_interface</tableName>
+  <showName>消息抓取系统-接口配置</showName>
+  <desc />
+  <submitName>mfInterface</submitName>
+  <fields>
+    <field id="73c63065ad9a6b573d81964def5b62a8" fieldName="c_bh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="编号" submitName="bh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="f5d4bf980d07383f7948ae5a56d35567" fieldName="c_system" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="接口系统" submitName="system" comment="1.0.0.0" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="349a57abc47923b725665d602214b84f" fieldName="c_type" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="接口类型" submitName="type" comment="1.0.0.0" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="7f97033c01ef273b62b5bfa7a3d85837" fieldName="c_interface" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="接口" submitName="interface" comment="1.0.0.0" required="false" maxLength="600" editor="input" />
+    </field>
+    <field id="a9fc472e2a16a7d2fbf98ff7bcb58dc1" fieldName="c_comment" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="说明" submitName="comment" comment="1.0.0.0" required="false" maxLength="300" editor="input" />
+    </field>
+  </fields>
+</table>
+

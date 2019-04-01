@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>c65ee7e6e75401ffe21b0a409d4f03a1</cid>
+  <key>key1585</key>
+  <tableName>t_mf_dbconfig</tableName>
+  <showName>消息抓取系统-数据库配置</showName>
+  <desc />
+  <submitName>mfDbconfig</submitName>
+  <fields>
+    <field id="64e61de590996b249b711681ca4a86b9" fieldName="c_bh" fieldType="text" dbmsType="char" pk="true" defaultValue="" unique="true">
+      <extend label="编号" submitName="bh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="483934e0999d632d040a0a5fc9e1fe61" fieldName="c_dbname" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="数据库名称" submitName="dbname" comment="1.0.0.0" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="dc7258b5962e201dadcf9edf24733663" fieldName="c_dbtype" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="数据库类型" submitName="dbtype" comment="1.0.0.0" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="062a53354dd2fd5586a024a5a4bc9c3a" fieldName="c_ipaddress" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="ip地址" submitName="ipaddress" comment="1.0.0.0" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="5e74a4e6ccc6b5f3b4a04edec07e69f7" fieldName="c_port" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="端口" submitName="port" comment="1.0.0.0" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="8fe9bfae404f1cbc6a477c831c4667d3" fieldName="c_dbuser" fieldType="organ" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="用户名" submitName="dbuser" comment="1.0.0.0" required="true" maxLength="300" editor="sTree" organType="user" />
+    </field>
+    <field id="06978d3c5df16c2f59e3dd7d6d2b78ba" fieldName="c_password" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="密码" submitName="password" comment="1.0.0.0" required="true" maxLength="300" editor="password" />
+    </field>
+    <field id="b9d86002f0acf1807c56aafe5afc51a2" fieldName="c_state" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="状态Y启用,N停用" submitName="state" comment="1.0.0.0" required="true" maxLength="300" editor="input" />
+    </field>
+  </fields>
+</table>
+

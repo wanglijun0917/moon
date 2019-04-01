@@ -1,0 +1,37 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:aty="http://www.thunisoft.com">
+  <head> 
+    <meta type="aty-meta" name="javaLocation" content="com.thunisoft.moon.mf.dbconfig.controller.MfDbconfigDetailController.java" th:remove="all"> 
+    <meta type="aty-meta" name="cssLocation" content="css/mf/dbconfig/mfDbconfigDetail.css" th:remove="all"> 
+    <meta type="aty-meta" name="jsLocation" content="js/mf/dbconfig/mfDbconfigDetail.js" th:remove="all"> 
+    <meta type="aty-meta" name="relation-table" content="key1585.t_mf_dbconfig" th:remove="all"> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> 
+    <link rel="stylesheet" th:href="@{/webjars/artery/artery-ui.css}"> 
+    <link rel="stylesheet" aty:import> 
+    <link rel="stylesheet" th:href="@{/css/mf/dbconfig/mfDbconfigDetail.css}"> 
+    <title>消息抓取系统-数据库配置详情</title> 
+    <base th:href="@{/}"> 
+  </head> 
+  <body> 
+    <div id="app" style="height:100%;width:100%"> 
+      <aty-form :data="rs" ref="form"> 
+        <aty-detail-item aty:dict="key1585.t_mf_dbconfig.c_dbname"></aty-detail-item> 
+        <aty-detail-item aty:dict="key1585.t_mf_dbconfig.c_dbtype"></aty-detail-item> 
+        <aty-detail-item aty:dict="key1585.t_mf_dbconfig.c_ipaddress"></aty-detail-item> 
+        <aty-detail-item aty:dict="key1585.t_mf_dbconfig.c_port"></aty-detail-item> 
+        <aty-detail-item aty:dict="key1585.t_mf_dbconfig.c_dbuser"></aty-detail-item> 
+        <aty-detail-item aty:dict="key1585.t_mf_dbconfig.c_password"></aty-detail-item> 
+        <aty-detail-item aty:dict="key1585.t_mf_dbconfig.c_state"></aty-detail-item> 
+        <aty-text ref="test_ref"></aty-text>
+      </aty-form> 
+    </div> 
+    <script type="text/javascript" th:src="@{/webjars/vue/vue.min.js}"></script> 
+    <script type="text/javascript" th:src="@{/webjars/artery/artery-ui.min.js}"></script> 
+    <script type="text/javascript" aty:import></script> 
+    <script th:inline="javascript">
+      var rs = Artery.resolveObj(/*[[${rs}]]*/); 
+    </script> 
+    <script type="text/javascript" th:src="@{/js/mf/dbconfig/mfDbconfigDetail.js}"></script>  
+  </body>
+</html>

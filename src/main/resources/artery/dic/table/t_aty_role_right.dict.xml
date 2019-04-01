@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>2c27a5c21b7b430db7cbbdbc53026da9</cid>
+  <key>dbatytatyroleright</key>
+  <tableName>t_aty_role_right</tableName>
+  <showName>角色-权限关系</showName>
+  <desc />
+  <submitName>atyRoleRight</submitName>
+  <fields>
+    <field id="b325632b4bc835d940e893e6522252d1" fieldName="c_id" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true">
+      <extend label="ID" submitName="id" comment="VarChar" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="33592f3435a324683937ff657c8ddd24" fieldName="c_roleid" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="角色ID" submitName="roleid" comment="VarChar" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="8770c3fdef863aa7fc7da9089da3f13a" fieldName="c_rightkey" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="权限字" submitName="rightkey" comment="VarChar" required="true" maxLength="300" editor="input" />
+    </field>
+  </fields>
+</table>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArterySupport>
+    <cnName>moon</cnName>
+    <title>首页</title>
+    <controllerPackage>com.thunisoft.moon.controller</controllerPackage>
+    <jsFolder>js</jsFolder>
+    <cssFolder>css</cssFolder>
+</ArterySupport>

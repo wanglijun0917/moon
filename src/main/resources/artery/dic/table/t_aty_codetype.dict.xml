@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>1995a3c1f1afeeaad90b2d915c37874a</cid>
+  <key>dbatytatycodetype</key>
+  <tableName>t_aty_codetype</tableName>
+  <showName>代码类型</showName>
+  <desc />
+  <submitName>atyCodetype</submitName>
+  <fields>
+    <field id="94149a8be5d2438c0a487aa87c28ec75" fieldName="c_id" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true">
+      <extend label="代码类型编号" submitName="id" comment="VarChar" required="true" maxLength="50" editor="input" />
+    </field>
+    <field id="e7546776d56c06d82c513304d35b4cfc" fieldName="c_name" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="代码类型名称" submitName="name" comment="VarChar" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="7559d24b29c625d1028d866c7e232187" fieldName="n_valid" fieldType="number" dbmsType="int" pk="false" defaultValue="1" unique="false">
+      <extend label="是否有效" submitName="valid" comment="Integer" required="true" valueUnit="无" maxPrecision="0" />
+    </field>
+    <field id="2e45db8fc8dc11a3b6fade2ad73eaf52" fieldName="n_sfkwh" fieldType="number" dbmsType="int" pk="false" defaultValue="2" unique="false">
+      <extend label="是否可维护" submitName="sfkwh" comment="Integer" required="true" valueUnit="无" maxPrecision="0" />
+    </field>
+  </fields>
+</table>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>27120974e2a3c5029a3abb3e62fe2135</cid>
+  <key>dbatytatyuser</key>
+  <tableName>t_aty_user</tableName>
+  <showName>帐户</showName>
+  <desc />
+  <submitName>atyUser</submitName>
+  <fields>
+    <field id="89408ee11ae7fdbab0df6225ccee310a" fieldName="c_id" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true">
+      <extend label="帐号ID" submitName="id" comment="VarChar" required="true" maxLength="50" editor="input" />
+    </field>
+    <field id="8b04ffdf8bddf06ad1af4ccec8a1f3aa" fieldName="c_loginid" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="登录标识" submitName="loginid" comment="VarChar" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="9c327802771e895cc4c005c9db84ea17" fieldName="c_name" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="姓名" submitName="name" comment="VarChar" required="true" maxLength="300" editor="input" />
+    </field>
+    <field id="824e8cdcead1f2d815fddc25ae11a1d7" fieldName="c_password" fieldType="text" dbmsType="varchar" pk="false" defaultValue="D41D8CD98F00B204E9800998ECF8427E" unique="false">
+      <extend label="密码" submitName="password" comment="VarChar" required="true" maxLength="32" editor="password" />
+    </field>
+    <field id="5dba7a82aecaa0327e099f7b31bfccf7" fieldName="c_mail" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="电子邮件" submitName="mail" comment="VarChar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="88c7f31c62b3cf7a05266a50d7fdc9b3" fieldName="c_ip" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="IP" submitName="ip" comment="VarChar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="b49dc70f339bf7fb4832eff73c7f3a6a" fieldName="c_xmjp" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="姓名简拼" submitName="xmjp" comment="VarChar" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="1b4ceb6765230a9021e3aeeedd4d27a9" fieldName="c_corp" fieldType="organ" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="所在单位" submitName="corp" comment="VarChar" required="false" maxLength="300" editor="sTree" organType="corp" />
+    </field>
+    <field id="1eca82c6bcbb1dba1bbd8b2bb58f1f5d" fieldName="c_dept" fieldType="organ" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="所在部门" submitName="dept" comment="VarChar" required="false" maxLength="300" editor="sTree" organType="dept" />
+    </field>
+    <field id="61f82bb5b45eaa6b0f0d49d7299c9f8f" fieldName="n_valid" fieldType="number" dbmsType="int" pk="false" defaultValue="1" unique="false">
+      <extend label="是否有效" submitName="valid" comment="Integer" required="true" valueUnit="无" maxPrecision="0" />
+    </field>
+    <field id="8156e620c059c737f2e9012d8924414c" fieldName="n_order" fieldType="number" dbmsType="int" pk="false" defaultValue="1" unique="false">
+      <extend label="显示顺序" submitName="order" comment="Integer" required="true" valueUnit="无" maxPrecision="0" />
+    </field>
+  </fields>
+</table>
+

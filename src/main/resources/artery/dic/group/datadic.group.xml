@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+  <group>
+    <id>a65a2772b19c92a53e8ed0ab78e1fe9e</id>
+    <dbName>db_aty</dbName>
+    <desc />
+    <showName>db_aty</showName>
+    <tables>
+      <table key="dbatytatycodetype" tableName="t_aty_codetype" />
+      <table key="dbatytatycode" tableName="t_aty_code" />
+      <table key="dbatytatycorp" tableName="t_aty_corp" />
+      <table key="dbatytatydept" tableName="t_aty_dept" />
+      <table key="dbatytatyuser" tableName="t_aty_user" />
+      <table key="dbatytatyright" tableName="t_aty_right" />
+      <table key="dbatytatyrole" tableName="t_aty_role" />
+      <table key="dbatytatyroleright" tableName="t_aty_role_right" />
+      <table key="dbatytatyuserright" tableName="t_aty_user_right" />
+      <table key="dbatytegbook" tableName="t_eg_book" />
+    </tables>
+  </group>
+</groups>
+

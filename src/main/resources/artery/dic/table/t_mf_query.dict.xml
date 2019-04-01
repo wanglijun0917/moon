@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>5052fc8d5b77048b5167e589a7bb89c1</cid>
+  <key>key5481</key>
+  <tableName>t_mf_query</tableName>
+  <showName>消息抓取系统-查询配置</showName>
+  <desc />
+  <submitName>mfQuery</submitName>
+  <fields>
+    <field id="e866d6d36c2cd068b6f29c9937df8676" fieldName="c_bh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="编号" submitName="bh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="2f41e359e2701cf23d34cbdc7a77f96b" fieldName="c_sysbh" fieldType="text" dbmsType="char" pk="false" defaultValue="" unique="false">
+      <extend label="系统编号" submitName="sysbh" comment="1.0.0.0" required="true" maxLength="32" editor="input" />
+    </field>
+    <field id="fbf746653999c85537698bce1e11b4c7" fieldName="c_type" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="消息类型" submitName="type" comment="1.0.0.0" required="false" maxLength="300" editor="input" />
+    </field>
+    <field id="bfbee702d1e73593a62aff00e7387cd0" fieldName="lc_script" fieldType="text" dbmsType="text" pk="false" defaultValue="" unique="false">
+      <extend label="脚本内容" submitName="script" comment="1.0.0.0" required="false" editor="textarea" />
+    </field>
+    <field id="25d29440554e491c7cc911be228e7afe" fieldName="n_frequency" fieldType="number" dbmsType="int" pk="false" defaultValue="" unique="false">
+      <extend label="更新频率" submitName="frequency" comment="1.0.0.0" required="false" valueUnit="无" maxPrecision="0" />
+    </field>
+    <field id="9eb166da7bfcd5d8ba2a87736fa9c666" fieldName="dt_starttime" fieldType="date" dbmsType="timestamp" pk="false" defaultValue="" unique="false">
+      <extend label="开始时间" submitName="starttime" comment="1.0.0.0" required="false" showTime="true" customFormat="YYYY-MM-DD" />
+    </field>
+    <field id="8bfdbe0e413e7be73f833a70f8865d07" fieldName="c_state" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend label="状态Y启用,N停用" submitName="state" comment="1.0.0.0" required="false" maxLength="300" editor="input" />
+    </field>
+  </fields>
+</table>
+
